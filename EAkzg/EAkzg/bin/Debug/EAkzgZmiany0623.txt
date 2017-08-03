@@ -1,0 +1,15 @@
+
+-dodanie obs³ugi obiektu Fasttrack
+-dodanie obs³ugi Architektury Danych
+-rozbudowa okna do zarz¹dzania wymaganiami
+-rozbudowa okna generowania HLD
+-rozbudowa logów notyfikuj¹cych postêp generowania
+-zwiêkszenie wydajnoœci pracy na modelu EA w tym:
+--zwiêkszenie wydajnoœci generowania HLD
+--zwiêkszenie wydajnoœci generowania wk³adów systemowych
+--zwiêkszenie wydajnoœci w oknie zarz¹dzania wymaganiami
+-obs³uga formatu RTF w polach Notes
+-obs³uga TaggedValue Dostawca na Elemencie typu Component (systemowy)
+-zmiana opisu realizacji wymagania systemowego
+-zmiana typu connectora pomiêdzy componenetem a pakietem z Realisation na Abstraction
+-automatyczne zamykanie diagramow po zakoñczeniu przetwarzania

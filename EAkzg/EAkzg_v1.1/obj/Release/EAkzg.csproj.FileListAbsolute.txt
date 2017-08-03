@@ -1,0 +1,14 @@
+D:\_Projekty\EAkzg\EAkzg\EAkzg\bin\Release\EAkzg.dll
+D:\_Projekty\EAkzg\EAkzg\EAkzg\bin\Release\EAkzg.pdb
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Properties.Resources.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Statystyki.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.csproj.GenerateResource.Cache
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.dll
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.pdb
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.csprojResolveAssemblyReference.cache
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.AsIsKlon.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Detale.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Koncepcja.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Oprogramie.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.Slownik.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Release\EAkzg.ZmielASIS.resources

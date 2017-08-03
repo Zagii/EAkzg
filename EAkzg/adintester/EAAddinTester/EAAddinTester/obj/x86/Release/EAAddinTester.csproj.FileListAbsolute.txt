@@ -1,0 +1,22 @@
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.csprojResolveAssemblyReference.cache
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.EAAddinTesterForm.resources
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.Properties.Resources.resources
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.csproj.GenerateResource.Cache
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.exe.config
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.exe
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.pdb
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg2.dll
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg2.pdb
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAkzg_v2_odpalacz.exe
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAkzg_v2_odpalacz.pdb
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.exe.config
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAkzg_v2_odpalacz.exe
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAkzg_v2_odpalacz.pdb
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.exe
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg_v2_odpalacz.pdb
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg2.dll
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\bin\Release\EAkzg2.pdb
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.csprojResolveAssemblyReference.cache
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.EAAddinTesterForm.resources
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.Properties.Resources.resources
+D:\Documents and Settings\kzagawa\EAkzg_svn\branches\EAkzg_v1.3_Krzysiek\EAkzg\adintester\EAAddinTester\EAAddinTester\obj\x86\Release\EAAddinTester.csproj.GenerateResource.Cache

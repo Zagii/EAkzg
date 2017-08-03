@@ -1,0 +1,13 @@
+﻿<p>
+Celem niniejszego dokumentu jest przedstawienie sposobu realizacji Wymagań Biznesowych dla projektu zawartych w dokumencie Concept Paper. Na opis sposób realizacji składają się następujące główne elementy:<br>
+1.	odniesienie do wymagań biznesowych<br>
+2.	zarys koncepcji rozwiązania<br>
+3.	opis architektury rozwiązania wraz z dekompozycją koniecznych zmian funkcjonalnych na poszczególne systemy<br>
+4.	opis koniecznych do wykonania zmian w poszczególnych systemach<br>
+5.	opis zmian koniecznych z punktu widzenia Infrastruktury<br>
+Zawarte w dokumencie informacje będą podstawą do:
+<ul>
+<li>	ustalenia kosztów oraz ostatecznych terminów wdrożenia przedsięwzięcia i tym samym podjęcia decyzji o jego realizacji,</li>
+<li> 	dalszych prac nad projektem - projektowania spójnego rozwiązania w poszczególnych systemach</li>
+</ul>
+</p>

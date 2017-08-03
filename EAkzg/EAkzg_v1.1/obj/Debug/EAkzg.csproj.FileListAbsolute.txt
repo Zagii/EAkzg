@@ -1,0 +1,16 @@
+D:\_Projekty\EAkzg\EAkzg\EAkzg\bin\Debug\EAkzg2.dll
+D:\_Projekty\EAkzg\EAkzg\EAkzg\bin\Debug\EAkzg2.pdb
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.AsIsKlon.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.CgenerujPakietyWkladow.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Detale.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Koncepcja.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Oprogramie.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Properties.Resources.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Slownik.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.Statystyki.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.ZmielASIS.resources
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.csproj.GenerateResource.Cache
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg2.dll
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg2.pdb
+D:\_Projekty\EAkzg\EAkzg\EAkzg\obj\Debug\EAkzg.csprojResolveAssemblyReference.cache
+D:\_Projekty\EAkzg\EAkzg\EAkzg\bin\Debug\EAkzg2.tlb

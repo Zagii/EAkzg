@@ -1,0 +1,8 @@
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\bin\Release\EAkzg_instalacja.exe
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\bin\Release\EAkzg_instalacja.pdb
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.Form1.resources
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.Properties.Resources.resources
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.csproj.GenerateResource.Cache
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.exe
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.pdb
+D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\EAkzg_instalacja\obj\Release\EAkzg_instalacja.csprojResolveAssemblyReference.cache

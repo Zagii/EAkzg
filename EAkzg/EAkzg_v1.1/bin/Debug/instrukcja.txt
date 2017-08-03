@@ -1,0 +1,5 @@
+http://www.sparxsystems.com/enterprise_architect_user_guide/9.3/automation/deployingaddins.html
+
+nazwa klasy do wpisania w regedit
+klucz: Sparx Systems/EAAddins/EAkzg/(Domyœlna) 
+wartoœæ: EAkzg.KzgAddinClass

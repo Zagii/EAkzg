@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83FEE41B-0401-41E3-88C0-40AD8324C684}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EAkzg</RootNamespace>
+    <AssemblyName>EAkzg2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.EA">
+      <HintPath>..\..\..\..\Program Files (x86)\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsIsKlon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsIsKlon.Designer.cs">
+      <DependentUpon>AsIsKlon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CgenerujPakietyWkladow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CgenerujPakietyWkladow.Designer.cs">
+      <DependentUpon>CgenerujPakietyWkladow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmodelKonfigurator.cs" />
+    <Compile Include="Crozdz1.cs" />
+    <Compile Include="Crozdz2.cs" />
+    <Compile Include="Crozdz3.cs" />
+    <Compile Include="Crozdz4.cs" />
+    <Compile Include="Crozdz5.cs" />
+    <Compile Include="Crozdz6.cs" />
+    <Compile Include="Crozdz7.cs" />
+    <Compile Include="Crozdz8.cs" />
+    <Compile Include="CrozdzialUtils.cs" />
+    <Compile Include="Detale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detale.Designer.cs">
+      <DependentUpon>Detale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAUtils.cs" />
+    <Compile Include="FTPClass.cs" />
+    <Compile Include="FTPClient.cs" />
+    <Compile Include="Impresonator.cs" />
+    <Compile Include="Koncepcja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koncepcja.Designer.cs">
+      <DependentUpon>Koncepcja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KzgAddinClass.cs" />
+    <Compile Include="Oprogramie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oprogramie.Designer.cs">
+      <DependentUpon>Oprogramie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Crozdz0.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Slownik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Slownik.Designer.cs">
+      <DependentUpon>Slownik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statystyki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statystyki.Designer.cs">
+      <DependentUpon>Statystyki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txt.cs" />
+    <Compile Include="Word.cs" />
+    <Compile Include="Zaleznosci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaleznosci.Designer.cs">
+      <DependentUpon>Zaleznosci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZmielASIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZmielASIS.Designer.cs">
+      <DependentUpon>ZmielASIS.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AsIsKlon.resx">
+      <DependentUpon>AsIsKlon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CgenerujPakietyWkladow.resx">
+      <DependentUpon>CgenerujPakietyWkladow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detale.resx">
+      <DependentUpon>Detale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Koncepcja.resx">
+      <DependentUpon>Koncepcja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oprogramie.resx">
+      <DependentUpon>Oprogramie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slownik.resx">
+      <DependentUpon>Slownik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statystyki.resx">
+      <DependentUpon>Statystyki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZmielASIS.resx">
+      <DependentUpon>ZmielASIS.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\h1.kzg" />
+    <None Include="bin\Debug\h2.kzg" />
+    <None Include="bin\Debug\h3.kzg" />
+    <None Include="bin\Debug\naglowek.kzg" />
+    <None Include="bin\Debug\rozdzial1.kzg" />
+    <None Include="bin\Debug\stopka.kzg" />
+    <None Include="bin\Debug\wstep.kzg" />
+    <None Include="Resources\Szablon.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\skrypt.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\styl.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
