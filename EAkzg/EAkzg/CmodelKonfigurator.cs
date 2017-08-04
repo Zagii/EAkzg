@@ -38,6 +38,9 @@ namespace EAkzg
 
        /* lista statusów akceptowalnych dla wymagań biznesowych przy przejściu do analizy systemowej */ 
        public static string[] statusyBRqGotowe = { "03-Zweryfikowane", "04-Wykonalne", "05-Niewykonalne", "14-Zamknięte", "15-Odrzucone","Uzgodnione","Zaakceptowane" };
+
+      /* lista statusów wymagań biznesowych ktorych nie prezentujemy w HLD ==> wymagania anulowane */
+       public static string[] statusyBRqAnulowane = { "15-Odrzucone", "Anulowane przez BO", "Anulowane przez IT" };
  
        /* tabela z komentarzami dodawanymi przez generator */
        public static Hashtable worning = new Hashtable() 
@@ -240,12 +243,12 @@ namespace EAkzg
                 }
            ////uznajemy, że każde wymaganie które nie jest architektoniczne ani na infrastrukture jest biznesowe
            // bo każdy oznacza to requriementy jak chce i robi sie burdel
-               // if (CmodelKonfigurator.czyZawiera(rq.Stereotype, CmodelKonfigurator.stereotypyWymaganBiznesowych))
-               // {
+                if (!CmodelKonfigurator.czyZawiera(rq.Status, CmodelKonfigurator.statusyBRqAnulowane))
+                {
                     WymaganiaBiznesoweLista.Add(rq);
                     return true;
-               // }
-               //return false;
+                }
+               return false;
        }
        public String dajAutoraProjektu(int ktory)
        {

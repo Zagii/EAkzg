@@ -865,10 +865,18 @@ namespace EAkzg
                     " and ((c.start_object_id=os.object_id and c.end_object_id=oi.object_id) "+
                     " or (c.start_object_id=oi.object_id and c.end_object_id=os.object_id)) and oi.object_type='Interface'"+
                     " and connector_type='Realisation'";
-                      Element realizator=modelProjektu.Repozytorium.GetElementSet(sql, 2).GetAt(0); //powinien byc tylko jeden system
+                Element realizator = null;
+                try
+                {
+                    realizator = modelProjektu.Repozytorium.GetElementSet(sql, 2).GetAt(0); //powinien byc tylko jeden system
+                }
+                catch(Exception ex)
+                {
+                    okno.Log(Statystyki.LogMsgType.Error, "Wyjątek w modelu,  to pewnie TIBCO wina!!\n, interfejs " + interfejsyUsage.Name + " nie posiada właściciela," + ex.Message);
+                }
                      if (realizator == null)
                     {
-                        okno.Log(Statystyki.LogMsgType.Error, "Błąd w modelu, interfejs " + interfejsyUsage.Name + " nie posiada właściciela");
+                        okno.Log(Statystyki.LogMsgType.Error, "Błąd w modelu, interfejs " + interfejsyUsage.Name + "  to pewnie TIBCO wina!!");
                         
                     }
                     else

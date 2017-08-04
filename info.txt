@@ -1,0 +1,18 @@
+git remote add url -- dodanie zdalnego serwera
+
+git clone url -klonowanie repo
+
+git fetch origin -odœwie¿enie ga³êzi master z serwerem
+
+git push repo ga³¹z -- wypchniece galezi do serwera repo
+
+git merge origin/servefix - scalenie 
+
+git checkout -b serverfix origin/serverfix -przelaczenie na ga³¹Ÿ zdalna
+git checkout master --- przelaczenie sie na galaz master
+
+git merge brancz -- zlaczenie z galezia brancz
+
+git push [nazwa zdalnego repozytorium] :[ga³¹Ÿ]  usun¹æ zdaln¹ ga³¹Ÿ 
+git push origin :serverfix  "WeŸ nic z mojej strony i zrób z tego [ga³¹Ÿ zdaln¹]"
+

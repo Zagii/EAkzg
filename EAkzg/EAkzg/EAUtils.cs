@@ -599,7 +599,7 @@ namespace EAkzg
                 //uzupełnij stereotyp
                 String stereotyp = CmodelKonfigurator.stereotypyFeatureSystemowychDostepnosc[0];
                 //uzupełnij status
-                String stat = "Nowy";
+                String stat = "Uzgodnione";
                 //uzupełnij notatkę
                 String notatka = "Brak zmian";
                 //dodaj wymaganie
@@ -636,7 +636,7 @@ namespace EAkzg
                 //uzupełnij stereotyp
                 String stereotyp = CmodelKonfigurator.stereotypyFeatureSystemowychPojemnosc[0];
                 //uzupełnij status
-                String stat = "Nowy";
+                String stat = "Uzgodnione";
                 //uzupełnij notatkę
                 String notatka = "Brak zmian";
                 //dodaj wymaganie
@@ -675,13 +675,14 @@ namespace EAkzg
                 //uzupełnij stereotyp
                 String stereotyp = CmodelKonfigurator.stereotypyFeatureSystemowychBezpieczeństwa[0];
                 //uzupełnij status
-                String stat = "Nowy";
+                String stat = "Uzgodnione";
                 //uzupełnij notatkę
                 String notatka = "Instrukcja uzupełniania. \n W zależności od zmian projektowych w systemie, zmień treść tego pola na zgodną z analizą systemową. \n";
                 notatka += "Jeśli zmiany projektowe: \n a) nie wpływają na ostatnią wersję zaakceptowanej deklaracji zgodności to: podaj nazwę deklaracji zgodności, do której się odwołujesz i wskaż link odwołujący się do tej deklaracji\n";
                 notatka += "b) zmieniają deklarację zgodności (zmianie ulega poziom bezpieczeństwa) to: załącz deklarację zgodności uwzględniającą zmiany w systemie wynikające z tego projektu (SoC_NazwaSystemu_vXX_PRXXX)\n";
                 notatka += "c) w przypadku braku deklaracji zgodności dla systemu, skontaktuj się z osobą z Departamentu Bezpieczeństwa i ustal termin dostarczenia deklaracji zgodności, ustalenia zapisz w tym polu.";
                  //dodaj wymaganie
+                notatka = "Brak zmian w deklaraci zgodności";
                 Element wymaganie = dodajElement(ref wymagPckg, nazwa, notatka, "Feature");
                 wymaganie.Stereotype = stereotyp;
                 wymaganie.Status = stat;

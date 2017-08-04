@@ -1,9 +1,0 @@
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\bin\Release\testFTP.exe
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\bin\Release\testFTP.pdb
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\bin\Release\WinSCPnet.dll
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.csprojResolveAssemblyReference.cache
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.Form1.resources
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.Properties.Resources.resources
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.csproj.GenerateResource.Cache
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.exe
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\testFTP\obj\Release\testFTP.pdb

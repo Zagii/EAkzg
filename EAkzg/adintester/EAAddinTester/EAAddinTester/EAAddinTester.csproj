@@ -43,7 +43,7 @@
       <HintPath>..\..\..\EAkzg\bin\Debug\EAkzg2.dll</HintPath>
     </Reference>
     <Reference Include="Interop.EA">
-      <HintPath>C:\Program Files\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Sparx Systems\EA\Interop.EA.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />

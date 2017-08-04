@@ -231,7 +231,8 @@ namespace EAkzg
             
             odczytajModelStart();
             Log(Statystyki.LogMsgType.Info, "Odczyt modelu " + st.Elapsed.ToString("hh\\:mm\\:ss\\.fff") + "\n");
-          
+
+           
             st.Stop();
             try
             {
@@ -254,7 +255,6 @@ namespace EAkzg
                 }*/
 
                 odczytRejestru();
-               
 
             }
             catch (Exception exc)
@@ -1091,7 +1091,7 @@ namespace EAkzg
             {
                 Package Rootpckg=EAUtils.dajModelPR(ref rep);
                 Package HLDpckg = EAUtils.dajPakietSciezkiP(ref Rootpckg, "HLD");
-
+               
                 Projekt_nazwaLbl.Text = EAUtils.dajNazweProjektu(ref HLDpckg);
                 AutorLbl.Text = "SD IT - " + EAUtils.dajAutoraProjektu(ref Rootpckg, "SD IT") + "\nSD NT - " + EAUtils.dajAutoraProjektu(ref Rootpckg, "SD NT");
                 LiczbaPakietowLbl.Text = "";
@@ -1173,6 +1173,7 @@ namespace EAkzg
         {
             m_SynchronizationContext.Post((@object) =>
             {
+               
                 Projekt_nazwaLbl.Text = modelProjektu.dajPelnaNazweProjektu();
                 AutorLbl.Text = "SD IT - " + modelProjektu.dajAutoraProjektu(CModel.IT) + "\nSD NT - " + modelProjektu.dajAutoraProjektu(CModel.NT);
                 LiczbaPakietowLbl.Text = "Liczba wymagań biznesowych: " + modelProjektu.WymaganiaBiznesoweLista.Count + "\n";
