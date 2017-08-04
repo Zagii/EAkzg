@@ -47,3 +47,19 @@ _ReSharper*/
 
 # Office Temp Files
 ~$*
+
+#mimo wszystko trzymaj pliki .kzg itp
+![Dd]ebug/*.kzg
+![Rr]elease/*.kzg
+![Dd]ebug/*.png
+![Rr]elease/*.png
+![Dd]ebug/*.js
+![Rr]elease/*.js
+![Dd]ebug/*.bat
+![Rr]elease/*.bat
+![Dd]ebug/*.txt
+![Rr]elease/*.txt
+![Dd]ebug/*.docx
+![Rr]elease/*.docx
+
+
