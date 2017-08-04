@@ -1,1 +1,0 @@
-D:\_Projekty\EAkzg\EAkzg\adintester\EAAddinTester\MyAddin\obj\Debug\MyAddin.csprojResolveAssemblyReference.cache

@@ -98,7 +98,8 @@ namespace EAkzg
             w += "<div class=\"img\">";
             w += dajTytulRozdz("2", ref nrRozdz, "Rozdzial1a");
 
-            word.wstawParagraf(modelProjektu.PMTipsElem.Notes, 0);
+          
+            word.wstawNotatkeEAtoRTF(modelProjektu.Repozytorium, modelProjektu.PMTipsElem);
             word.wstawZalacznikRTF(modelProjektu.PMTipsElem);
 
             w += "</div>";
