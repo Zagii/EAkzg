@@ -1,0 +1,133 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+
+    .rounded_corners
+    {
+        border: 1px solid #A1DCF2;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .rounded_corners td, .rounded_corners th
+    {
+        border: 1px solid #A1DCF2;
+        font-family: Arial;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .rounded_corners table table td
+    {
+        border-style: none;
+    }
+
+
+
+.tool_descr, .tool_descr2 { display: none;   
+                            /*transform: scale(0);
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); */}
+a:hover span.tool_descr, a:hover span.tool_descr2 { display: block;  width: 90%; background-color: lightblue; border: 1px solid black; padding: 5px; color: black; text-decoration: none;
+       /*-webkit-animation-name: example;
+   -webkit-animation-duration: 1s;
+    -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);  */
+}
+
+.tooltipTableKZG {
+	/*width:100%;*/
+	word-wrap: break-word;
+	min-width: 400pt;
+	/*max-width: 160px;*/
+}
+.tooltipTableKZG tr {
+	text-align:left;
+	padding:8px;
+/*	width:100%;*/
+}
+.tooltipTableKZG th, td{
+	/* max-width: 50%; */
+	max-width:500pt;	
+	min-width:75pt;
+}
+.tooltipTableKZG tr:nth-child(even) {
+	background-color:#3276b1;
+}
+.tooltipTableKZG tr {
+	/* max-width: 50%;	 */
+}
+
+.tooltipKZG {	
+	position:relative;
+	display:inline-block;
+	border-bottom:1px dotted #000
+}
+.tooltipKZG .tooltiptextKZG {
+	visibility:hidden;
+	/*width:100%;*/
+	background-color:#000;
+	color:#fff;
+	text-align:center;
+	border-radius:6px;
+	padding:5px 5px;
+	position:absolute;
+	z-index:1;
+	top:150%;
+	left:50%;
+	/*margin-left:-60pt;*/
+	opacity:0;
+	transition:opacity 1s
+}
+.tooltipKZG .tooltiptextKZG::after {
+	content:"";
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	margin-left:-5px;
+	border-width:5px;
+	border-style:solid;
+	border-color:transparent transparent #000 transparent
+}
+.tooltipKZG:hover .tooltiptextKZG {
+	visibility:visible;
+	opacity:1
+}

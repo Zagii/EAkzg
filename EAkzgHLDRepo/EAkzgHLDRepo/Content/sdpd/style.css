@@ -1,0 +1,315 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-08-27, 10:34:11
+    Author     : Przemek
+*/
+
+
+.alert-gray {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+#flashmessage .alert {
+/*    display: none;*/
+    position: relative;
+    top: 30px;
+}
+
+#flashmessage .alert .messages {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+}
+
+#flashmessage .alert .glyphicon {
+    vertical-align: top;
+    top: 2px;
+    font-size: 16px;
+    right: 7px;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    z-index: 1000;
+}
+
+.page-header div {
+    font-size: 20px;
+    line-height: 64px;
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.sidebar .nav.submenu {
+    padding-left: 15px;
+}
+
+.login-box {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.login-box input, .login-box label {
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+#additionalDataContainer .ivh-treeview {
+    list-style: none;
+}
+
+.custom-select {
+    width: 100% !important;
+}
+
+.custom-select > a.dropdown-toggle {
+    position: relative;
+    top: -4px;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 14px;
+    color: #555 !important;
+}
+
+.custom-select > a.dropdown-toggle > b {
+    right: -8px !important;
+}
+
+#permissions-table td:first-of-type .controller td {
+    font-weight: bold;
+}
+
+#permissions-table .controller .expander {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+#permissions-table td:first-of-type .action td {
+    padding-left: 25px;
+}
+
+.permissions-panel {
+    margin-top: 40px;
+}
+
+#permissions-table table {
+    width: 100%;
+}
+
+#permissions-table table td {
+    padding: 4px 0;
+    height: 30px;
+}
+
+#permissions-table table tr.hover {
+    background-color: #abcdef;
+}
+
+#permissions-table .first-column {
+    width: 30%;
+}
+
+#permissions-table th {
+    vertical-align: top;
+}
+
+dropdown-multiselect .btn {
+    background-color: white;
+}
+
+dropdown-multiselect .btn-group {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.table-responsive {
+    overflow-x: visible;
+}
+
+.console {
+    padding: 10px;
+    margin-top: 30px;
+    color: #777;
+    background-color: #e5e5e5;
+    min-height: 300px;
+}
+
+.control-checkbox .input-group {
+    width: 150px;
+}
+
+.control-checkbox .input-group input[type="checkbox"] {
+    box-shadow: none;
+}
+
+/**
+ * Horizontal menu styles
+ */
+.sidebar {
+    position: static !important;
+    float: left;
+    width: auto !important;
+    margin-top: 0 !important;
+    z-index: 1 !important;
+}
+
+.sidebar #side-menu {
+    float: left;
+}
+
+.sidebar .nav>li>a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar #side-menu > li > .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar #side-menu > li .submenu {
+    display: none;
+}
+
+.sidebar #side-menu > li:hover > .submenu,
+.sidebar #side-menu > li .submenu.active {
+    display: block;
+}
+
+.sidebar ul li {
+    display: inline-block;
+    height: 30px;
+    border-bottom: none !important;
+}
+.sidebar .nav.submenu {
+    position: relative;
+    width: 300px;
+    background-color: #f8f8f8;
+    padding-left: 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar .nav.submenu li {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar #side-menu > li > a > .arrow:before {
+    content: "\f107" !important;
+}
+
+.sidebar #side-menu li > a.active > .arrow:before {
+    content: "\f107" !important;
+}
+
+.sidebar #side-menu > li {
+    position: relative;
+    top: -10px;
+    height: 40px;
+}
+
+.sidebar .arrow {
+    position: relative;
+    float: right;
+    top: 3px;
+    left: 6px;
+}
+
+#page-wrapper {
+    margin: 0 !important;
+}
+
+.phaseMatrix-table tr th{
+    background-color: #069;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+.phaseMatrix-table tr td:first-of-type{
+    background-color: #67b168;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+.phaseMatrix-table tbody tr:hover td {
+    background-color: #A8C4E0;
+}
+
+#projects-delay-table tbody tr td > div.tooltip-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#projects-delay-table tbody tr td > div.tooltip-holder > span {
+    position: absolute;
+    display: block;
+    top: -25px;
+    width: 100%;
+    font-size: 45px;
+}
+
+#projects-delay-table tbody tr td.yellow {
+    background-color: #f0ad4e;
+}
+
+#projects-delay-table tbody tr td.green {
+    background-color: #5cb85c;
+}
+
+
+#projects-delay-table tbody tr td.red {
+    background-color: #d9534f;
+}
+
+#projects-delay-table th.realization-phase {
+    width: 10%;
+    min-width: 150px;
+    text-overflow: ellipsis;
+}
+
+#projects-delay-table tbody tr td {
+    text-align: center;
+    color: #fff;
+}
+
+#projects-delay-table tbody tr td .tooltip-inner {
+     white-space:pre-wrap;
+}

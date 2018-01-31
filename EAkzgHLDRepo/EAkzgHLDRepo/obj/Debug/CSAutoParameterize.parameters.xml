@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-EAkzgHLDRepo-20161024114111.mdf;Initial Catalog=aspnet-EAkzgHLDRepo-20161024114111;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\bin\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MySQLConnStr-Web.config Connection String" description="MySQLConnStr Connection String used in web.config by the application to access the database." defaultValue="Dsn=eakzg_mysql;description=x;server=10.22.23.82;uid=eakzg;database=eakzg_schema;port=3306;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySQLConnStr']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\bin\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySQLConnStr']/@connectionString" />
+  </parameter>
+  <parameter name="MySQLConnStr5.1-Web.config Connection String" description="MySQLConnStr5.1 Connection String used in web.config by the application to access the database." defaultValue="DRIVER={MySQL ODBC 5.1 Driver}; SERVER=10.22.23.82;DATABASE=eakzg_schema;USER=eakzg;PASSWORD=a;OPTION=3;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySQLConnStr5.1']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\ and\ Settings\\kzagawa\\My\ Documents\\Visual\ Studio\ 2013\\Projects\\EAkzgHLDRepo\\EAkzgHLDRepo\\obj\\Debug\\Package\\PackageTmp\\bin\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySQLConnStr5.1']/@connectionString" />
+  </parameter>
+</parameters>
