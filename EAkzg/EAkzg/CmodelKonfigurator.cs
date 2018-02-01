@@ -79,6 +79,7 @@ namespace EAkzg
        public const string PMTipsElemString = "PM - wskazówki";
        public const string TestyElemString = "Testy - wskazówki";
        public const string TestyAutomatElemString = "Testy - automatyzacja";
+       public const string TestyWydajnoscElemString = "Testy - wydajnościowe";
 
        public static string [] obszarPakStr = {"IT","NT"};
       
@@ -137,6 +138,7 @@ namespace EAkzg
        public Element PMTipsElem;
        public Element TestyElem;
        public Element TestyElemAutomat;
+       public Element TestyElemWydajnosc;
 
        public Package[] ObszarPckg = new Package[2];
        public Package[] ArchStatPckg = new Package[2];
@@ -307,7 +309,12 @@ namespace EAkzg
                         TestyElemAutomat.Notes = "Brak informacji o automatyzacji testów.";
                         TestyElemAutomat.Update();
                     }
-           
+                    TestyElemWydajnosc = EAUtils.dajElementLubGoZrob(ref DefinicjePckg, CmodelKonfigurator.TestyWydajnoscElemString);
+                    if (TestyElemWydajnosc.Notes == "")
+                    {
+                        TestyElemWydajnosc.Notes = "Brak informacji o testach wydajnościowych.";
+                        TestyElemWydajnosc.Update();
+                    }
                     for (int i = 0; i < 2; i++)//(obszarEnum[])Enum.GetValues(typeof(int)))
                     {
                         ObszarPckg[i] = EAUtils.utworzPakietGdyBrak(ref HLDPckg, CmodelKonfigurator.obszarPakStr[i], "");

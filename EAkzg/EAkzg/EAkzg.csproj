@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\adintester\EAAddinTester\EAAddinTester\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -196,24 +196,44 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\h1.kzg" />
-    <None Include="bin\Debug\h2.kzg" />
-    <None Include="bin\Debug\h3.kzg" />
-    <None Include="bin\Debug\naglowek.kzg" />
-    <None Include="bin\Debug\rozdzial1.kzg" />
-    <None Include="bin\Debug\stopka.kzg" />
-    <None Include="bin\Debug\wstep.kzg" />
+    <None Include="bin\Debug\h1.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\h2.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\h3.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\naglowek.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\rozdzial1.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\stopka.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\wstep.kzg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="czekaj" />
     <None Include="Resources\Szablon.docx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\logo.png" />
+    <None Include="bin\Debug\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\skrypt.js" />
+    <None Include="bin\Debug\skrypt.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\styl.css" />
+    <None Include="bin\Debug\styl.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

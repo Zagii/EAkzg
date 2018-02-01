@@ -1,0 +1,3 @@
+
+test konwertera opensource
+	https://github.com/erdomke/RtfPipe

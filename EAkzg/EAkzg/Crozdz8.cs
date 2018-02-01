@@ -12,11 +12,13 @@ namespace EAkzg
     class Crozdz8 : CrozdzialUtils
     {
         string[,] spis = new string[,] {{"6 Wskazówki dotyczące testów","r12abc","spis1"},
-              {"6.1 Testy automatyczne","r1a1","spis1-1"}//1
+              {"6.1 Testy automatyczne","r1a1","spis1-1"},//1
+               {"6.2 Testy wydajnościowe","r1a1","spis1-1"}
         };//0
 
         string[,] spisEN = new string[,] {{"6 Test-hints","r12abc","spis1"},
-            {"6.1 Automatic tests","r1a1","spis1-1"}//1
+            {"6.1 Automatic tests","r1a1","spis1-1"},//1
+            {"6.2 Performance tests","r1a1","spis1-1"}
         };//0
 
 
@@ -90,7 +92,21 @@ namespace EAkzg
 
                return w;
            }
-    
+           private String dajTestyWydajnosc(ref int nrRozdz)
+           {
+               //  okno.Log(Statystyki.LogMsgType.Info, "Eksport koncepcji ogólnej");
+               String w = "";
+               w += "<div class=\"img\">";
+               w += dajTytulRozdz("2", ref nrRozdz);
+               // word.wstawParagraf(modelProjektu.TestyElem.Notes, 0);
+               word.wstawNotatkeEAtoRTF(modelProjektu.Repozytorium, modelProjektu.TestyElemWydajnosc);
+               word.wstawZalacznikRTF(modelProjektu.TestyElemWydajnosc);
+
+
+               w += "</div>";
+
+               return w;
+           }
         public String dajRozdzial()
         {
             int nrRozdz = 0;
@@ -100,6 +116,7 @@ namespace EAkzg
 
             w += dajTesty(/*defPckg,*/ ref nrRozdz);
             w += dajTestyAutomat(/*defPckg,*/ ref nrRozdz);
+            w += dajTestyWydajnosc(/*defPckg,*/ ref nrRozdz);
             w += "</div>";
             return w;
         }
