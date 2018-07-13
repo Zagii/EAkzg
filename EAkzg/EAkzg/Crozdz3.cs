@@ -223,16 +223,16 @@ namespace EAkzg
                     Wordy.Table tab;
                     if (jezykPolski)
                     {
-                        tab = word.wstawTabele("", new string[] { "Lp", "Nazwa systemu", "Opis roli systemu w projekcie","Dostawca" });
+                    tab = word.wstawTabele("", new string[] { "Lp", "Nazwa systemu", "Opis roli systemu w projekcie" });//,"Dostawca" });
                     }
                     else 
                     {
-                        tab = word.wstawTabele("", new string[] { "No", "System name", "System changes - abstract","Vendor" });
+                    tab = word.wstawTabele("", new string[] { "No", "System name", "System changes - abstract" });//,"Vendor" });
                     }
-                    tab.Columns[1].SetWidth(25f, Wordy.WdRulerStyle.wdAdjustNone);
-                    tab.Columns[2].SetWidth(80f, Wordy.WdRulerStyle.wdAdjustNone);
-                    tab.Columns[3].SetWidth(330f, Wordy.WdRulerStyle.wdAdjustNone);
-                    tab.Columns[4].SetWidth(65f, Wordy.WdRulerStyle.wdAdjustNone);
+                    tab.Columns[1].SetWidth(30f, Wordy.WdRulerStyle.wdAdjustNone);
+                    tab.Columns[2].SetWidth(90f, Wordy.WdRulerStyle.wdAdjustNone);
+                    tab.Columns[3].SetWidth(380f, Wordy.WdRulerStyle.wdAdjustNone);
+                    //tab.Columns[4].SetWidth(65f, Wordy.WdRulerStyle.wdAdjustNone);
                     wynik += "<table><tr><th>Lp</th><th>Nazwa systemu</th><th>Opis roli systemu w projekcie</th></tr>";
                     int j = 1;
                     foreach (Package p in systemsPckg.Packages)
@@ -241,7 +241,7 @@ namespace EAkzg
                         EA.Element systEl = EAUtils.dajComponentSystemZpakietu(modelProjektu.Repozytorium, p);
                         String dostawca = EAUtils.dajDostawceSystemu(modelProjektu.Repozytorium, systEl);
 
-                        word.wstawWierszDoTabeli("", tab, j + 1, new string[] { j.ToString(), p.Name, p.Notes, dostawca });
+                        word.wstawWierszDoTabeli("", tab, j + 1, new string[] { j.ToString(), p.Name, p.Notes });//, dostawca });
                         wynik += "<tr><td>" + j + "</td><td>" + p.Name + "</td><td>" + p.Notes + " </td></tr>";
                         j++;
                     }
