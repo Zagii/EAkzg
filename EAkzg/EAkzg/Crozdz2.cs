@@ -112,6 +112,9 @@ namespace EAkzg
                     {
                         if (e.Type == "Issue") continue;//omin issue bo potem osobno wszystkie issue ida do tabelki
 
+                    if (CmodelKonfigurator.czyZawiera(e.Status, CmodelKonfigurator.statusyIssuePomin))
+                    {  continue; }
+
                         w += "<tr";
 
                         w += "><td>" + i + "</td><td>" + e.Name + "</td><td>";
@@ -125,7 +128,10 @@ namespace EAkzg
                     }
                     foreach (Element e in modelProjektu.ListaIssue)
                     {
-                        string opis = e.Notes;
+                        if (CmodelKonfigurator.czyZawiera(e.Status, CmodelKonfigurator.statusyIssuePomin))
+                        { continue; }
+
+                      string opis = e.Notes;
                         word.wstawWierszDoTabeli("", tab, i + 1, new string[] { i.ToString(), e.Name, opis });
                         i++;
                     }

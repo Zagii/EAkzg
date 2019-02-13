@@ -59,3 +59,7 @@ d:\documents and settings\kzagawa\my documents\visual studio 2013\Projects\EAkzg
 D:\Documents and Settings\kzagawa\My Documents\Visual Studio 2013\Projects\EAkzgHLDRepo\EAkzgHLDRepo\bin\Web.config
 D:\Documents and Settings\kzagawa\My Documents\Visual Studio 2013\Projects\EAkzgHLDRepo\EAkzgHLDRepo\bin\Web.Debug.config
 D:\Documents and Settings\kzagawa\My Documents\Visual Studio 2013\Projects\EAkzgHLDRepo\EAkzgHLDRepo\bin\Web.Release.config
+C:\MojeRzeczy\EAkzg_git\EAkzg\EAkzgHLDRepo\EAkzgHLDRepo\obj\Debug\EAkzgHLDRepo.csprojAssemblyReference.cache
+C:\MojeRzeczy\EAkzg_git\EAkzg\EAkzgHLDRepo\EAkzgHLDRepo\obj\Debug\EAkzgHLDRepo.csproj.CoreCompileInputs.cache
+C:\MojeRzeczy\EAkzg_git\EAkzg\EAkzgHLDRepo\EAkzgHLDRepo\obj\Debug\EAkzgHLDRepo.dll
+C:\MojeRzeczy\EAkzg_git\EAkzg\EAkzgHLDRepo\EAkzgHLDRepo\obj\Debug\EAkzgHLDRepo.pdb

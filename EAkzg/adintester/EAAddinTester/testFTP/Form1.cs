@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using WinSCP;
+//using WinSCP;
 
 
 namespace testFTP
@@ -26,7 +26,7 @@ namespace testFTP
         try
         {
             // Setup session options
-            SessionOptions sessionOptions = new SessionOptions {
+      /*      SessionOptions sessionOptions = new SessionOptions {
                 Protocol = Protocol.Sftp,
                 HostName = "architect-new",
                 UserName = "test",
@@ -55,7 +55,7 @@ namespace testFTP
                    richTextBox1.Text+="Upload of {0} succeeded"+ transfer.FileName;
                 }
             }
- 
+ */
            
         }
         catch (Exception s)

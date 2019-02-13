@@ -26,6 +26,7 @@ namespace EAkzg
 {
     public partial class Statystyki : Form
     {
+       
         private SynchronizationContext m_SynchronizationContext;
         string[] spis ={"1 ORGANIZACYJNE","1.1 Zawartość, cel i przeznaczenie dokumentu","1.2 Słownik pojęć","1.3 Załączniki, powiązane dokumenty","1.4 Zespół projektowy",
                             "2 PERSPEKTYWA FUNKCJONALNA","2.1 Krótki opis projektu","2.2 Wymagania biznesowe",
@@ -53,6 +54,7 @@ namespace EAkzg
         EA.Package projekt = null;
         EA.Project projektInterfejs;
         String sciezkaDocelowa;
+        String logFile;
         String[] rozdzialy=new String[12+1];
         String stopkaHTML;
         String SpisTresciHTML;
@@ -836,11 +838,40 @@ namespace EAkzg
         {
         }
          enum Kolor {Blad,Warning,Info,Zwykly};
-       
-         public void Log(LogMsgType msgtype, string msg)
+        static void LogF(string logMessage, TextWriter txtWriter)
+        {
+            try
+            {
+              //  txtWriter.Write("\r\nLog : ");
+                txtWriter.WriteLine("Log - {0} {1}: \t\t {2}", DateTime.Now.ToLongTimeString(),
+                    DateTime.Now.ToLongDateString(),logMessage);
+                //txtWriter.Write("  :");
+                //txtWriter.WriteLine("  :{0}", logMessage);
+                //txtWriter.WriteLine("-------------------------------");
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+        void LogWrite(string logMessage)
+        {
+
+            try
+            {
+                using (StreamWriter w = System.IO.File.AppendText(logFile))
+                {
+                    LogF(logMessage, w);
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+        public void Log(LogMsgType msgtype, string msg)
          {
              try
              {
+
                  logRTF.Invoke(new EventHandler(delegate
                  {
                      logRTF.SelectedText = string.Empty;
@@ -870,6 +901,7 @@ namespace EAkzg
                      logRTF.AppendText(msg);
                      logRTF.ScrollToCaret();
                  }));
+                LogWrite(msg);
              }
              catch (Exception)
              {
@@ -982,8 +1014,9 @@ namespace EAkzg
                 bool pokaWord = pokaWordCB.Checked;
                 sciezkaZrodlo = sciezkaZrodloLbl.Text;
                 sciezkaDocelowa = sciezka_proj.Text + projekt.Name + "\\";
+                logFile = sciezkaDocelowa + "log_" + projekt.Name + ".txt";
                 //await System.Threading.Tasks.Task.Run(() => ( /*generujWatek();*/dlugapetla(source.Token),source.Token);
-              //  Task<int> task = System.Threading.Tasks.Task.Run(() => dlugapetla( source.Token), source.Token);
+                //  Task<int> task = System.Threading.Tasks.Task.Run(() => dlugapetla( source.Token), source.Token);
                 System.Threading.Tasks.Task task = System.Threading.Tasks.Task.Run(() => generujWatek(jezykPolski,sciezkaZrodlo,sciezkaDocelowa,pokaWord,source.Token), source.Token);
                 try
                 {
@@ -1184,7 +1217,35 @@ namespace EAkzg
                 LiczbaPakietowLbl.Text += "Liczba modyfikowanych obszarów NT: " + modelProjektu.WkladyPckg[CModel.NT].Packages.Count + "\n";
             }, modelProjektu);
         }
-      //  private void generujWatek()
+        private DateTime RetrieveLinkerTimestamp()
+        {
+            string filePath = System.Reflection.Assembly.GetCallingAssembly().Location;
+            const int c_PeHeaderOffset = 60;
+            const int c_LinkerTimestampOffset = 8;
+            byte[] b = new byte[2048];
+            System.IO.Stream s = null;
+
+            try
+            {
+                s = new System.IO.FileStream(filePath, System.IO.FileMode.Open, System.IO.FileAccess.Read);
+                s.Read(b, 0, 2048);
+            }
+            finally
+            {
+                if (s != null)
+                {
+                    s.Close();
+                }
+            }
+
+            int i = System.BitConverter.ToInt32(b, c_PeHeaderOffset);
+            int secondsSince1970 = System.BitConverter.ToInt32(b, i + c_LinkerTimestampOffset);
+            DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0);
+            dt = dt.AddSeconds(secondsSince1970);
+            dt = dt.AddHours(TimeZone.CurrentTimeZone.GetUtcOffset(dt).Hours);
+            return dt;
+        }
+        //  private void generujWatek()
         private void generujWatek(/*BackgroundWorker worker=null*/bool jezykPolski, String sciezkaZrodlo, String sciezkaDocelowa, bool pokWord, CancellationToken cancellationToken)
     {
        try
@@ -1194,7 +1255,8 @@ namespace EAkzg
 
                // Log(LogMsgType.Normal,"Rozpoczęcie generowania HLD\n");
            Log(new CLog(LogMsgType.Normal,"Rozpoczęcie generowania HLD\n"));
-           ProgressBarKrok();
+           Log(new CLog(LogMsgType.Normal,"Wersja z dnia: "+ RetrieveLinkerTimestamp().ToLongDateString() + " " + RetrieveLinkerTimestamp().ToLongTimeString()));
+                ProgressBarKrok();
            if (cancellationToken.IsCancellationRequested)throw new OperationCanceledException(cancellationToken);
 
             /*

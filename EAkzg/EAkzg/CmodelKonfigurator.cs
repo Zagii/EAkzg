@@ -41,6 +41,9 @@ namespace EAkzg
 
       /* lista statusów wymagań biznesowych ktorych nie prezentujemy w HLD ==> wymagania anulowane */
        public static string[] statusyBRqAnulowane = { "15-Odrzucone", "Anulowane przez BO", "Anulowane przez IT" };
+
+        /* lista issue pomijanych / nie generowanch do HLD */
+        public static string[] statusyIssuePomin = { "15-Odrzucone", "14-Zamknięte" };
  
        /* tabela z komentarzami dodawanymi przez generator */
        public static Hashtable worning = new Hashtable() 
